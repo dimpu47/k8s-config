@@ -21,7 +21,7 @@ spec:
         - env:
             - name: NEXT_PUBLIC_API_URL
               value: http://localhost:8000
-          image: FRONTEND_IMAGE_PLACEHOLDER
+          image: gcr.io/fluid-stratum-296023/frontend-app:73c0b26482682394ece7bea54bcde744e6a42310
           name: frontend
           ports:
             - containerPort: 3000
