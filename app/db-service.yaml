@@ -4,7 +4,6 @@ metadata:
   labels:
     service: db
   name: db
-  namespace: app
 spec:
   ports:
     - name: "5432"

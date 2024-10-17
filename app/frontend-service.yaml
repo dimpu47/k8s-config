@@ -4,7 +4,6 @@ metadata:
   labels:
     service: frontend
   name: frontend
-  namespace: app
 spec:
   ports:
     - name: "3000"

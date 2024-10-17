@@ -4,7 +4,6 @@ metadata:
   labels:
     service: db
   name: db
-  namespace: app
 spec:
   replicas: 1
   selector:

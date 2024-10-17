@@ -4,7 +4,6 @@ metadata:
   labels:
     service: backend
   name: backend
-  namespace: app
 spec:
   ports:
     - name: "8000"
