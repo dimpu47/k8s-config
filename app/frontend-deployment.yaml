@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: frontend
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: frontend
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose -f compose.yaml convert -o k8s-manifests
+        kompose.version: 1.34.0 (cbf2835db)
+      labels:
+        service: frontend
+    spec:
+      containers:
+        - env:
+            - name: NEXT_PUBLIC_API_URL
+              value: http://localhost:8000
+          image: FRONTEND_IMAGE_PLACEHOLDER
+          name: frontend
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+      restartPolicy: Always
