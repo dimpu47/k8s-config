@@ -21,7 +21,7 @@ spec:
         - env:
             - name: NEXT_PUBLIC_API_URL
               value: http://localhost:8000
-          image: gaurawesome/frontend-app:latest
+          image: gaurawesome/frontend-app:ba88c336626ed33ae8f49a4e23044ae8c74dacb2
           name: frontend
           ports:
             - containerPort: 3000

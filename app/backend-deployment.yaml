@@ -18,7 +18,7 @@ spec:
         - env:
             - name: DATABASE_URL
               value: postgres://postgres:postgres@db:5432/postgres?sslmode=disable
-          image: gcr.io/fluid-stratum-296023/backend-app:73c0b26482682394ece7bea54bcde744e6a42310
+          image: gaurawesome/backend-app:ba88c336626ed33ae8f49a4e23044ae8c74dacb2
           name: backend
           ports:
             - containerPort: 8000
