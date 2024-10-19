@@ -23,7 +23,7 @@ spec:
             - name: NEXT_PUBLIC_API_URL
               value: http://backend:8000
         - name: nginx
-          image: gaurawesome/frontend-app:d4bca5cb0fb3191e4f2c8ae9539d3b0f4c8bc80f
+          image: nginx:latest
           ports:
             - containerPort: 80
           volumeMounts:
