@@ -18,7 +18,7 @@ spec:
         - env:
             - name: DATABASE_URL
               value: postgres://postgres:postgres@db:5432/postgres?sslmode=disable
-          image: gaurawesome/backend-app:7a99c1d2cf112ec54bb300cfaf689452ceb6f7dc
+          image: gaurawesome/backend-app:d4bca5cb0fb3191e4f2c8ae9539d3b0f4c8bc80f
           name: backend
           ports:
             - containerPort: 8000
