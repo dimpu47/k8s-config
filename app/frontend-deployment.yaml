@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: gaurawesome/frontend-app:d4bca5cb0fb3191e4f2c8ae9539d3b0f4c8bc80f
+          image: gaurawesome/frontend-app:caa1534a461a15d8921d4c45d7bdceefab3b31ba
           ports:
             - containerPort: 3000
           env:
             - name: NEXT_PUBLIC_API_URL
               value: http://backend:8000
         - name: nginx
-          image: gaurawesome/frontend-app:d4bca5cb0fb3191e4f2c8ae9539d3b0f4c8bc80f
+          image: nginx:latest
           ports:
             - containerPort: 80
           volumeMounts:
