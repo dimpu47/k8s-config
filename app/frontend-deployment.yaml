@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: gaurawesome/frontend-app:485ba4e0744201aa853b03888aee65f3b2842220
+          image: gaurawesome/frontend-app:792c96f265bbb6141251d09bc5f3533b8914ffb5
           ports:
             - containerPort: 3000
           env:
