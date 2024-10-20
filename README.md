@@ -1,7 +1,19 @@
 # k8s-config
 
-This repository contains Kubernetes manifests, and ArgoCD syncs any changes from this repository into the GKE Cluster, keeping it updated.
+This repository contains Kubernetes manifests, and ArgoCD syncs any changes from this repository into the GKE Cluster, keeping it updated. Manifests in this repo are mainted by cluster admins and ci/cd workflow of the microservices to be deployed.
 
+## CD Flow
+
+```mermaid
+graph LR;
+    subgraph GKE[GKE Cluster]
+        A1[Backend Service] -->|Uses| B1[Database Service];
+        A2[Frontend Service] -->|Calls| A1;
+    end
+    C[K8s Config Repo] -->|Syncs K8s Manifests| D[ArogCD];
+    D -->|Updates| GKE;
+
+```
 
 ## ArgoCD
 
