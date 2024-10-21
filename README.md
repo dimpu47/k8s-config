@@ -12,6 +12,7 @@ graph LR;
     end
     C[K8s Config Repo] -->|Syncs K8s Manifests| D[ArogCD];
     D -->|Updates| GKE;
+    D --> C
 
 ```
 
